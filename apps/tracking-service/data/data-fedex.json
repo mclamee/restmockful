@@ -1,0 +1,6 @@
+{
+  "carrier": "FedEx",
+  "trackNo": "{{trackNo}}",
+  "data": "this is test data",
+  "fromApp": "{{app}}"
+}

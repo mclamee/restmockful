@@ -1,0 +1,6 @@
+{
+  "carrier": "UPS",
+  "trackNo": "{{trackNo}}",
+  "data": "this is test data",
+  "fromApp": "{{app}}"
+}

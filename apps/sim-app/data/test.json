@@ -1,0 +1,4 @@
+{
+  "service": "greetings",
+  "data": "Hello {{name}}!"
+}

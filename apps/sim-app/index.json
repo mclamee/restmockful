@@ -1,0 +1,38 @@
+{
+	"version": 1.0,
+	"rules": [
+		{
+			"name": "Simple JSON Test",
+			"url": "/greetings",
+			"params": ["name"],
+			"method": "get",
+			"resp": {
+				"header": {
+					"code": 200,
+					"type": "json"
+				},
+				"dataFile": "data/test.json"
+			},
+			"samples": [
+				"/greetings?name=World"
+			]
+		},	
+		
+		{
+			"name": "Simple HTML Test",
+			"url": "/index.html",
+			"params": ["first", "last"],
+			"method": "get",
+			"resp": {
+				"header": {
+					"code": 200,
+					"type": "html"
+				},
+				"dataFile": "data/test.html"
+			},
+			"samples": [
+				"/index.html?first=Zack&last=Li"
+			]
+		}
+	]
+}

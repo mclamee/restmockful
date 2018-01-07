@@ -1,0 +1,24 @@
+{
+  "name": "restmockful",
+  "version": "1.0.0",
+  "description": "A lean web server for mocking restful services or hosting a static web site",
+  "main": "",
+  "scripts": {
+    "test": "echo Error: no test specified",
+    "build": "npm install",
+    "preserver": "npm run build",
+    "server": "npm run start"
+  },
+  "dependencies": {
+    "mime": "2.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mclamee/restmockful.git"
+  },
+  "keywords": [
+    "REST API MOCK TOOL"
+  ],
+  "author": "mclamee",
+  "license": "MIT"
+}

@@ -1,0 +1,44 @@
+{
+	"version": 1.0,
+	"rules": [
+		{
+			"name": "1. URL Param Style",
+			"url": "/carriers/{carrier}/trackNos/{trackNo}",
+			"params": ["app"],
+			"method": "get",
+			"resp": {
+				"header": {
+					"code": 200,
+					"type": "json"
+				},
+				"dataFile": "data/data-{{carrier}}.json"
+			},
+			"samples": [
+				"/carriers/fedex/trackNos/998766545213",
+				"/carriers/ups/trackNos/U777RSYT3123BVV3",
+				"/carriers/expo/trackNos/119927365431?app=etl",
+				"/carriers/dbs/trackNos/ORD87662231?app=etl"
+			]
+		},
+		
+		{
+			"name": "2. Request Param Style",
+			"url": "/track",
+			"params": ["carrier", "trackNo", "app"],
+			"method": "get",
+			"resp": {
+				"header": {
+					"code": 200,
+					"type": "json"
+				},
+				"dataFile": "data/data-{{carrier}}.json"
+			},
+			"samples": [
+				"/track?carrier=fedex&trackNo=998766545213",
+				"/track?carrier=ups&trackNo=U777RSYT3123BVV3",
+				"/track?carrier=expo&trackNo=119927365431&app=etl",
+				"/track?carrier=dbs&trackNo=ORD87662231&app=etl"
+			]
+		}
+	]
+}

@@ -1,0 +1,6 @@
+{
+  "carrier": "DB Schenker",
+  "trackNo": "{{trackNo}}",
+  "data": "this is test data",
+  "fromApp": "{{app}}"
+}
